@@ -17,17 +17,25 @@ Builds, configs and troubleshooting notes are documented here.
 - SSH remote administration
 
 **VirtualBox (on the Legion)**
-- `DC01`: Windows Server 2025 domain controller for `lab.local` (AD DS, DNS) *(in progress)*
+- `DC01`: Windows Server 2025 domain controller for `lab.local` (AD DS, DNS).
+  See the [Active Directory lab write-up](active-directory/README.md).
 - Kali Linux + Metasploitable 2: penetration testing practice
 
+## Completed
+- [x] Samba share access from Windows 11 ([troubleshooting write-up](troubleshooting/2026-11-samba-windows11-guest-access.md))
+- [x] Windows Server 2025 domain controller, `lab.local` forest
+- [x] LabCorp OU structure, security groups and users
+- [x] Service desk practice: password resets, unlocks, leavers, moves, account expiry
+
 ## Planned
-- [ ] DHCP reservation and Tailscale remote access
+- [ ] Windows 11 client (CLIENT01) joined to `lab.local`
+- [ ] Group Policy: password policy, mapped drives, desktop restrictions
+- [ ] DHCP reservation and Tailscale remote access for the Ubuntu server
 - [ ] Uptime Kuma monitoring
 - [ ] Automated backups with restic
-- [ ] Windows 11 client joined to `lab.local`, Group Policy practice
 - [ ] Wazuh SIEM with agents on lab machines
 
 ## Repo layout
-- `services/`: Docker Compose files and setup notes for each service
-- `active-directory/`: AD lab build steps, OUs, GPOs
+- `active-directory/`: AD lab build steps, screenshots and scripts
 - `troubleshooting/`: write-ups of problems I diagnosed and fixed
+- `services/`: Docker Compose files and setup notes for each service (coming soon)
