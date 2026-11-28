@@ -7,7 +7,7 @@ Builds, configs and troubleshooting notes are documented here.
 
 | Device | Role | Specs |
 |---|---|---|
-| Old PC | Always-on Ubuntu server running CasaOS (Docker) | [CPU] / [RAM] / [storage] |
+| Old PC | Always-on Ubuntu server running CasaOS (Docker) | Intel i9 / 8GB / 512GB |
 | Lenovo Legion 5 | Windows 11 host for VirtualBox VMs | Ryzen 7 260 / 16 GB RAM |
 
 ## What's running
